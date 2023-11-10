@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>predict</title> 
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<div class="center"> <!-- Center content on page -->
+<body style="background-color:lightgrey;"> <!-- Defines Background color -->
+
+    <h2>Upload Image Yolo</h2> <!-- Adds a Title -->
+
+    {% for message in get_flashed_messages() %} <!-- Allows Flashed Messages -->
+    <h3>{{ message }}</h3>
+    {% endfor %}
+
+    <form method=post enctype=multipart/form-data> <!-- Upload Image -->
+        <input type=file name=file>
+        <input type="submit" value="Upload">
+    </form>
+
+    <form action="/" method="POST"> <!-- Moves user to Home Page -->
+
+        <br><label for="home">Return Home:</label> <!-- Displays text -->
+
+        <input type="submit" value="home"> <!-- Submit button to move user home -->
+    </form>
+</div>    
+
+</body>
+
+</html>
