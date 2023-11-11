@@ -117,4 +117,4 @@ def predict_Yolo():
 
     return render_template("predict_Yolo.html")
 
-app.run(debug=False)
+app.run(debug=False, port = 5000)
