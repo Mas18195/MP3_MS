@@ -96,7 +96,6 @@ def upload_file_Yolo():
         filename = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
         name.filename=filename
         file.save(filename)
-        flash('File successfully uploaded and saved!')
         return redirect(url_for('predict_Yolo'))
     
     flash('Invalid file type. Please upload an image.')
