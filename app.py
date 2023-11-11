@@ -1,8 +1,8 @@
+from ultralytics import YOLO
 from flask import Flask, render_template, request, flash, url_for, redirect
 import os
 
 from transformers import ViTImageProcessor, ViTForImageClassification # ViTFeatureExtractor
-from ultralytics import YOLO
 from PIL import Image
 
 import warnings
